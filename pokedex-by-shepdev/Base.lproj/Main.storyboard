@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="pokemon.ttf">
+            <string>PokemonSolidNormal</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -20,9 +25,36 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="at4-GL-ZTt">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCf-ag-ZnO">
+                                        <rect key="frame" x="152" y="0.0" width="297" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="297" id="MC2-v8-0KA"/>
+                                            <constraint firstAttribute="height" constant="55" id="Yez-s0-fld"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="37"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNc-pp-bfd">
+                                        <rect key="frame" x="568" y="23" width="22" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="K5y-Dv-LXZ"/>
+                                            <constraint firstAttribute="width" constant="22" id="KrG-fI-Jyi"/>
+                                        </constraints>
+                                        <state key="normal" image="musicIcon"/>
+                                        <connections>
+                                            <action selector="musicBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1xv-2a-xFq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.5286477745" blue="0.02186946167" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="GB1-ib-ng1"/>
+                                    <constraint firstItem="kNc-pp-bfd" firstAttribute="top" secondItem="at4-GL-ZTt" secondAttribute="top" constant="23" id="Kf4-xD-BeC"/>
+                                    <constraint firstItem="vCf-ag-ZnO" firstAttribute="centerX" secondItem="at4-GL-ZTt" secondAttribute="centerX" id="Tec-vu-KRK"/>
+                                    <constraint firstItem="vCf-ag-ZnO" firstAttribute="centerY" secondItem="at4-GL-ZTt" secondAttribute="centerY" id="lLh-wX-Wjg"/>
+                                    <constraint firstAttribute="trailing" secondItem="kNc-pp-bfd" secondAttribute="trailing" constant="10" id="v7G-3c-Dni"/>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="HyV-bS-he3">
@@ -123,5 +155,6 @@
     <resources>
         <image name="59" width="120" height="120"/>
         <image name="bg" width="1920" height="1200"/>
+        <image name="musicIcon" width="219" height="256"/>
     </resources>
 </document>
