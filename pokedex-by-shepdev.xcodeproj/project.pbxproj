@@ -19,6 +19,7 @@
 		C855F8BD1CBD91C900884894 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = C855F8BC1CBD91C900884894 /* csv.swift */; };
 		C855F8C11CBEB14800884894 /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C855F8C01CBEB14800884894 /* pokemon.ttf */; };
 		C855F8C31CBEB7F600884894 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C855F8C21CBEB7F600884894 /* music.mp3 */; };
+		C855F8C51CBEC17000884894 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C855F8C41CBEC17000884894 /* PokemonDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		C855F8BC1CBD91C900884894 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		C855F8C01CBEB14800884894 /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
 		C855F8C21CBEB7F600884894 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		C855F8C41CBEC17000884894 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				C855F8A01CBD73FC00884894 /* ViewController.swift */,
+				C855F8C41CBEC17000884894 /* PokemonDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				C855F8A71CBD73FC00884894 /* pokedex_by_shepdev.xcdatamodeld in Sources */,
 				C855F8B91CBD79B900884894 /* Pokemon.swift in Sources */,
 				C855F8A11CBD73FC00884894 /* ViewController.swift in Sources */,
+				C855F8C51CBEC17000884894 /* PokemonDetailVC.swift in Sources */,
 				C855F89F1CBD73FC00884894 /* AppDelegate.swift in Sources */,
 				C855F8BB1CBD85A300884894 /* PokeCell.swift in Sources */,
 			);
